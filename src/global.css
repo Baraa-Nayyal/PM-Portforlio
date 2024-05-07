@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply leading-[normal] m-0;
+  background-image: url("./assests/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  overflow-x: hidden;
+  /* background-image: linear-gradient(
+    to right top,
+    #c76ea3,
+    #cc8bbc,
+    #d2a8d2,
+    #dbc3e3,
+    #e7ddf1,
+    #e3dcf2,
+    #dfdcf3,
+    #dbdbf4,
+    #bbc2ed,
+    #97abe6,
+    #6896df,
+    #0082d8
+  ); */
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+}

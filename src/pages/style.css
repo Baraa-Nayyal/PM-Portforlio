@@ -1,0 +1,25 @@
+/* .swiper-slide-next #card,
+.swiper-slide-prev #card {
+  margin-top: 50px;
+} */
+
+#card {
+  position: relative;
+  
+  transition: top 0.3s ease-in-out; /* Add transition effect to the 'top' property */
+  top: 0px;
+}
+
+.swiper-slide-active #card {
+  top: -50px;
+}
+
+.swiper-wrapper {
+  height: 480px;
+  padding-top: 50px;
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: 80px !important;
+}

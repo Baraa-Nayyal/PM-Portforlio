@@ -26,7 +26,7 @@ const Footer = () => {
           </span>
         </div>
         <div className="flex relative items-center flex-wrap justify-center gap-x-24 gap-y-3 mx-32">
-          <NavLinks mode="light" />
+          <NavLinks mode="footer" isMobileScreen={false} />
           <div className="w-[110%] opacity-50 bottom-[-20px] absolute border border-solid border-[#DCDEEB]"></div>
         </div>
 

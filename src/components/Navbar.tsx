@@ -18,19 +18,31 @@ function Navbar() {
 
   return (
     <>
-      <header className="bg-transparent relative flex-wrap top-0 z-20 mx-auto w-full p-6">
-        <div className="hidden md:flex items-center justify-center gap-24 mx-32">
-          <NavLinks mode="dark" />
+      <nav className="bg-tdransparent relative  mb-10 top-0 z-20  w-full p-6">
+        <div className="hidden sm:flex container max-w-[600px] mx-auto px-4 gap-4 justify-between">
+          <NavLinks mode="navbar" isMobileScreen={isOpen} />
         </div>
-        <div className="md:hidden ">
-          <button onClick={toggleNav}>{isOpen ? <X /> : <Menu />}</button>
+        <div className="sm:hidden relative z-20 ">
+          <button
+            className="rounded-fullp-2 rounded-full text-sm bg-primary w-10 h-10 text-white"
+            onClick={toggleNav}
+          >
+            {isOpen ? (
+              <X className="mt-[4px]" />
+            ) : (
+              <Menu className="mt-[4px]" />
+            )}
+          </button>
         </div>
-        {isOpen && (
-          <div className="flex basis-full gap-3  flex-col items-center absolute left-[50%] translate-x-[-50%] p-10 backdrop-blur w-full">
-            <NavLinks mode="dark" />
-          </div>
-        )}
-      </header>
+
+        <div
+          className={`flex basis-full z-10 gap-y-6 flex-col items-center justify-center backdrop-blur-xl w-screen h-screen fixed transition-all ease-in-out duration-300  top-0 ${
+            isOpen ? "left-0" : "left-[-120%]"
+          }`}
+        >
+          <NavLinks mode="navbar" isMobileScreen={isOpen} />
+        </div>
+      </nav>
     </>
   );
 }

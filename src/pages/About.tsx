@@ -9,10 +9,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <div
-        className="flex overflow-hidden flex-col xl:flex-row items-center justify-center gap-x-40 container mx-auto px-32"
-        style={{ height: "calc(100vh - 72px)" }}
-      >
+      <div className="flex overflow-hidden flex-col h-fit my-32 xl:my-64 xl:flex-row items-center justify-center gap-x-40 container mx-auto px-32">
         <img
           data-aos="fade-right"
           data-aos-delay="50"
@@ -27,19 +24,19 @@ const About = () => {
           className="max-sm:hidden absolute right-[-40%] w-[90%] h-[80%]"
           src="/circleTwo.svg"
         />
-        <div className="w-fit">
+        <div>
           <p
             data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="1000"
-            className="font-extrabold text-[25px] md:text-[30px] lg:text-[60px] text-[#961A7A]"
+            className="font-extrabold  xl:text-[50px] sm:text-[40px] text-[30px] text-[#961A7A]"
           >
             ABDUALRAHMAN <br />
             <span
               data-aos="fade-up"
               data-aos-delay="250"
               data-aos-duration="1000"
-              className="tracking-[19px] md:tracking-[23px] lg:tracking-[45px]"
+              className="font-extrabold xl:text-[50px] sm:text-[39px] text-[30px] text-[#961A7A] tracking-[23px] sm:tracking-[32px] xl:tracking-[38px]"
             >
               RIHAWEI
             </span>
@@ -59,7 +56,8 @@ const About = () => {
           laudantium vero distinctio deserunt accusamus ullam illo consectetur
           voluptas, sed nulla quas autem aspernatur velit architecto enim,
           debitis nam error totam ab voluptatem consequatur nobis! Earum
-          possimus pariatur magni molestiae quibusdam quidem, consectetur
+          possimus pariatur magni molestiae quibusdam quidem, consectetur Lorem,
+          ipsum dolor sit amet
         </p>
       </div>
     </>

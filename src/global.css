@@ -8,7 +8,7 @@
 
 body {
   @apply leading-[normal] m-0;
-  background-image: url("./assests/background.png");
+  /* background-image: url("./assests/background.png"); */
   background-repeat: no-repeat;
   background-size: 100% 120%;
   overflow-x: hidden;
@@ -27,6 +27,15 @@ body {
     #6896df,
     #0082d8
   ); */
+}
+
+.hello {
+  /* background-image: url("./assests/background.png"); */
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 *,

@@ -15,7 +15,7 @@ const Home = () => {
           className="absolute bottom-[57px] w-[90%] h-[80%]"
           src="/homeborder.png"
         /> */}
-      <div className="flex flex-col xl:flex-row gap-x-60 justify-center my-5 md:my-10 h-fit w-full items-center container mx-auto px-32">
+      <div className="flex flex-col xl:flex-row gap-x-60 justify-center  h-fit w-full items-center container mx-auto px-32">
         <section
           data-aos="fade-up"
           className="flex flex-col order-3 xl:order-1 text-center xl:text-left"

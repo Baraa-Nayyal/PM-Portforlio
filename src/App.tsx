@@ -12,13 +12,15 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div className="flex flex-col gap-y-32">
-        <div className=" bg-[url('./assests/background.png')] fixed top-0 -z-[10] h-full w-full bg-cover"></div>
-        <Navbar />
-        <Home />
-        <About />
-        <Skills />
-        {/* <Routes>
+      <div className=" bg-[url('./assests/background.png')] fixed top-0 -z-[10] h-full w-full bg-cover"></div>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Clients />
+      <Reviews />
+      {/* <Routes>
         <Home />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -27,8 +29,7 @@ function App() {
         <Route path="/clients" element={<Clients />} />
         <Route path="/reviews" element={<Reviews />} />
       </Routes> */}
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }

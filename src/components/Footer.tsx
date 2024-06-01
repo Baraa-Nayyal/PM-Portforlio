@@ -16,7 +16,7 @@ const Footer = () => {
           <span className="font-extrabold text-5xl text-[#DCDEEB]">
             ABDUALRAHMAN
           </span>
-          <span className="font-extrabold ml-4   text-5xl text-[#DCDEEB] tracking-[19px]">
+          <span className="font-extrabold ml-3   text-5xl text-[#DCDEEB] tracking-[16px]">
             RIHAWEI
           </span>
           {/* <span className="font-extrabold">ABDUALRAHMAN</span>

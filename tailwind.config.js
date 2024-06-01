@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         white: "#fff",
         primary: "#961A7A",
+        secondary: "#F2E3EF",
+        hover: "#89186f",
         gray: {
           100: "#787878",
           200: "rgba(0, 0, 0, 0.6)",
@@ -25,9 +27,7 @@ module.exports = {
         dimgray: "#797278",
       },
       spacing: {},
-      fontFamily: {
-        aboreto: "Aboreto",
-      },
+      // fontFamily: "Caros",
       borderRadius: {
         "3xs": "10px",
         xl: "20px",

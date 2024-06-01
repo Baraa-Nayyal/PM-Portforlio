@@ -18,9 +18,11 @@ const Home = () => {
       <div className="flex flex-col xl:flex-row gap-x-60 justify-center  h-fit w-full items-center container mx-auto px-32">
         <section
           data-aos="fade-up"
+          data-aos-once
           className="flex flex-col order-3 xl:order-1 text-center xl:text-left"
         >
           <span
+            data-aos-once
             data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="1000"
@@ -29,29 +31,32 @@ const Home = () => {
             HELLO, I Am <b className="font-extrabold">Project Manager</b>
           </span>
           <span
+            data-aos-once
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="100"
             data-aos-offset="-100"
-            className="font-extrabold xl:text-[50px] sm:text-[40px] text-[30px] text-primary"
+            className="font-extrabold xl:text-[55px] sm:text-[45px] text-[35px] text-primary"
           >
             ABDUALRAHMAN
           </span>
           <span
+            data-aos-once
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="150"
             data-aos-offset="-100"
-            className="font-extrabold xl:text-[50px] sm:text-[40px] text-[30px] text-[#961A7A] tracking-[24px] sm:tracking-[32px] xl:tracking-[38px] ml-5 sm:ml-7 xl:ml-0"
+            className="font-extrabold -mt-2 text-[35px] xl:text-[55px] sm:text-[45px] text-[#961A7A] tracking-[24px] sm:tracking-[31px] xl:tracking-[38px] ml-5 sm:ml-8 xl:ml-0"
           >
             RIHAWEI
           </span>
           <p
+            data-aos-once
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
             data-aos-offset="-100"
-            className="capitalize max-w-[500px]"
+            className="capitalize max-w-[500px] leading-6"
           >
             lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
             officia tempore nisi odit, minus odio consequatur alias
@@ -67,6 +72,7 @@ const Home = () => {
         <section className="relative order-2">
           <div className="absolute z-[-1] xl:left-[-50px] top-[-10px]">
             <img
+              data-aos-once
               data-aos="fade-left"
               data-aos-delay="50"
               data-aos-duration="1000"
@@ -76,6 +82,7 @@ const Home = () => {
           </div>
           <div>
             <img
+              data-aos-once
               data-aos="fade-left"
               src="/businessMan.png"
               className="xl:w-[400px] md:w-[300px] w-[250px] "

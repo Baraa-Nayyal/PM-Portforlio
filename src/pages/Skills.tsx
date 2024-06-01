@@ -3,24 +3,30 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 const Skills = () => {
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
+    AOS.init({ once: true });
+    window.addEventListener("load", AOS.refresh);
+
+    return () => {
+      window.removeEventListener("load", AOS.refresh);
+    };
   }, []);
 
   return (
     <>
-      <div>
+      <div id="skills">
         <h1
           data-aos="zoom-out-up"
+          data-aos-once
           data-aos-delay="50"
           data-aos-duration="1000"
-          className="text-center my-2 text-[#961A7A] text-[80px]"
+          className="text-center my-2 text-primary text-[60px]"
         >
           My Skills
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 container mx-auto px-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-16 md:gap-4 container mx-auto px-10">
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-duration="500"
             className="flex flex-col items-center text-center"
           >
@@ -32,6 +38,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="250"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"
@@ -44,6 +51,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="350"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"
@@ -56,6 +64,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="450"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"
@@ -68,6 +77,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="550"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"
@@ -80,6 +90,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="650"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"
@@ -92,6 +103,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="750"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"
@@ -104,6 +116,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="850"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"
@@ -116,6 +129,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="950"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"
@@ -128,6 +142,7 @@ const Skills = () => {
           </div>
           <div
             data-aos="flip-right"
+            data-aos-once
             data-aos-delay="1050"
             data-aos-duration="1000"
             className="flex flex-col items-center text-center"

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const NavLinks = ({
@@ -7,18 +8,15 @@ const NavLinks = ({
   mode: "navbar" | "footer";
   isMobileScreen: boolean;
 }) => {
-  const activeStyle = {
-    fontWeight: "bold",
-    textDecoration: "underline",
-  };
+
 
   return (
     <>
       <a
-        className={`${mode === "footer" ? "text-[#DCDEEB]" : "text-black"}  ${
+        className={`${mode === "footer" ? "text-[#DCDEEB]" : "text-black"} ${
           isMobileScreen &&
-          " border-solid border-b-2 pb-5 w-full text-center border-primary"
-        }`}
+          "border-primary border-solid border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
+        } ${window.location.hash === "#" ? "font-bold underline" : ""}`}
         href="#"
       >
         Home
@@ -26,45 +24,45 @@ const NavLinks = ({
       <a
         className={`${mode === "footer" ? "text-[#DCDEEB]" : "text-black"}  ${
           isMobileScreen &&
-          " border-solid border-b-2 pb-5 w-full text-center border-primary"
-        }`}
-        href="#"
+          "border-primary border-solid border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
+        }${window.location.hash === "#about" ? "font-bold underline" : ""}`}
+        href="#about"
       >
         About
       </a>
       <a
         className={`${mode === "footer" ? "text-[#DCDEEB]" : "text-black"}  ${
           isMobileScreen &&
-          " border-solid border-b-2 pb-5 w-full text-center border-primary"
-        }`}
-        href="#"
+          "border-primary border-solid border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
+        } ${window.location.hash === "#skills" ? "font-bold underline" : ""}`}
+        href="#skills"
       >
         Skills
       </a>
       <a
         className={`${mode === "footer" ? "text-[#DCDEEB]" : "text-black"}  ${
           isMobileScreen &&
-          " border-solid border-b-2 pb-5 w-full text-center border-primary"
+          "border-primary border-solid border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
         }`}
-        href="#"
+        href="#projects"
       >
         Projects
       </a>
       <a
         className={`${mode === "footer" ? "text-[#DCDEEB]" : "text-black"}  ${
           isMobileScreen &&
-          " border-solid border-b-2 pb-5 w-full text-center border-primary"
-        }`}
-        href="#"
+          "border-primary border-solid border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
+        } ${window.location.hash === "#clients" ? "font-bold underline" : ""}`}
+        href="#clients"
       >
         Clients
       </a>
       <a
         className={`${mode === "footer" ? "text-[#DCDEEB]" : "text-black"}  ${
           isMobileScreen &&
-          " border-solid border-b-2 pb-5 w-full text-center border-primary"
-        }`}
-        href="#"
+          "border-primary border-solid border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
+        } ${window.location.hash === "#reviews" ? "font-bold underline" : ""}`}
+        href="#reviews"
       >
         Reviews
       </a>

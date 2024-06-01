@@ -1,13 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Aboreto:wght@300;400;500;700;800&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* @import url("https://fonts.googleapis.com/css2?family=Aboreto:wght@300;400;500;700;800&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.cdnfonts.com/css/caros");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .primary-card {
+    @apply bg-secondary rounded-xl;
+  }
+  #swiper-btn {
+    @apply bg-[#d530b061] text-primary  p-2 rounded-full w-10 h-10 text-[29px] flex items-center justify-center cursor-pointer;
+  }
+}
+
+.swiper-pagination {
+  cursor: auto;
+}
+
 body {
   @apply leading-[normal] m-0;
+  font-family: "Caros", sans-serif !important;
   /* background-image: url("./assests/background.png"); */
   background-repeat: no-repeat;
   background-size: 100% 120%;
@@ -29,8 +44,14 @@ body {
   ); */
 }
 
-.hello {
-  /* background-image: url("./assests/background.png"); */
+* {
+  font-family: "Caros", sans-serif !important;
+
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
 }
 
 a {
@@ -38,8 +59,32 @@ a {
   color: black;
 }
 
-*,
-::before,
-::after {
-  border-width: 0;
+*::-webkit-scrollbar {
+  height: 11px;
+  width: 11px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #ffd6fd;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #f0caee;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ebc6e9;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #961a7a;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #590863;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #6b1257;
 }

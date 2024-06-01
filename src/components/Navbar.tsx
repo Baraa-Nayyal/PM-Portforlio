@@ -18,8 +18,8 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-tdransparent relative  mb-10 top-0 z-20  w-full p-6">
-        <div className="hidden sm:flex container max-w-[600px] mx-auto px-4 gap-4 justify-between">
+      <nav className="relative  mb-10 top-0 z-20  w-full p-6">
+        <div className="hidden sm:flex container mx-auto px-4  max-w-[700px] gap-x-4 justify-between">
           <NavLinks mode="navbar" isMobileScreen={isOpen} />
         </div>
         <div className="sm:hidden relative z-20 ">
@@ -28,9 +28,9 @@ function Navbar() {
             onClick={toggleNav}
           >
             {isOpen ? (
-              <X className="mt-[4px]" />
+              <X className="mt-[3px]" />
             ) : (
-              <Menu className="mt-[4px]" />
+              <Menu className="mt-[3px]" />
             )}
           </button>
         </div>

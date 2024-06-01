@@ -5,21 +5,21 @@
 
 #card {
   position: relative;
-  
-  transition: top 0.3s ease-in-out; /* Add transition effect to the 'top' property */
+
+  transition: top 0.3s ease-in-out;
   top: 0px;
 }
 
-.swiper-slide-active #card {
+#reviews .swiper-slide-active #card {
   top: -50px;
 }
 
-.swiper-wrapper {
+#reviews .swiper-wrapper {
   height: 480px;
   padding-top: 50px;
 }
 
-.swiper-pagination {
+#reviews .swiper-pagination {
   position: relative;
   bottom: 80px !important;
 }

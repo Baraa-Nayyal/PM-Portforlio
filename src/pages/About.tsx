@@ -9,8 +9,12 @@ const About = () => {
   }, []);
   return (
     <>
-      <div className="flex overflow-hidden flex-col h-fit my-32 xl:my-64 xl:flex-row items-center justify-center gap-x-40 container mx-auto px-32">
+      <div
+        id="about"
+        className="flex overflow-hidden flex-col h-fit my-32 xl:my-64 xl:flex-row items-center justify-center gap-x-40 container mx-auto px-32"
+      >
         <img
+          data-aos-once
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="1000"
@@ -18,6 +22,7 @@ const About = () => {
           src="/circleOne.svg"
         />
         <img
+          data-aos-once
           data-aos="fade-left"
           data-aos-delay="250"
           data-aos-duration="1000"
@@ -26,23 +31,26 @@ const About = () => {
         />
         <div>
           <p
+            data-aos-once
             data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="1000"
-            className="font-extrabold  xl:text-[50px] sm:text-[40px] text-[30px] text-[#961A7A]"
+            className="font-extrabold  xl:text-[55px] sm:text-[45px] text-[35px] text-[#961A7A] text-center"
           >
-            ABDUALRAHMAN <br />
+            <span>ABDUALRAHMAN</span> <br />
             <span
+              data-aos-once
               data-aos="fade-up"
               data-aos-delay="250"
               data-aos-duration="1000"
-              className="font-extrabold xl:text-[50px] sm:text-[39px] text-[30px] text-[#961A7A] tracking-[23px] sm:tracking-[32px] xl:tracking-[38px]"
+              className="font-extrabold xl:text-[55px] sm:text-[45px] text-[35px] text-[#961A7A] tracking-[24px] sm:tracking-[31px] xl:tracking-[38px] ml-6 sm:ml-9"
             >
               RIHAWEI
             </span>
           </p>
         </div>
         <p
+          data-aos-once
           data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="500"
